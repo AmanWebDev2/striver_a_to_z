@@ -11,4 +11,7 @@ def lower_bound(arr,target):
 	return left
 nums = [1,1,3,3,7,8,9,9,9,11]
 n = len(nums)
-print(lower_bound(nums,10))
+
+import bisect
+print(bisect.bisect_left(nums,12))
+print(lower_bound(nums,12))
