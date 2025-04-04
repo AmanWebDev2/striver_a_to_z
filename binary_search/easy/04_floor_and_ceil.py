@@ -26,7 +26,7 @@ def ceil(arr,target):
 			left = mid + 1
 	return ans
 
-arr = [1, 3, 5, 7, 9]
-target = 6
+arr = [5,7,7,8,8,10]
+target = 8
 print(floor(arr, target))  # Output: 5
 print(ceil(arr, target))  # Output: 7
