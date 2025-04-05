@@ -31,7 +31,7 @@ def search(nums,target):
 	idx = bs(nums,target,pivot_idx,len(nums)-1)
 	return idx
 
-nums = [4,5,6,7,0,1,2]
-target = 0
+nums = [1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1]
+target = 2
 print(search(nums,target))
 	
