@@ -28,10 +28,10 @@ def approach_binary_search(nums):
 
 		if nums[mid] == nums[mid+1]:
 			if is_even:
-				# go left
+				# go right
 				l = mid + 1
 			else:
-				# go right
+				# go left
 				r = mid-1
 
 		else:
