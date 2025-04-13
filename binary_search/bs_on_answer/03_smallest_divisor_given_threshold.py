@@ -22,3 +22,29 @@ def brute(nums,threshold):
 
 print(brute([1,2,5,9],6))
 # output: 5
+
+
+def binary_search(nums,threshold):
+    low = 1
+    high = max(nums)
+    ans = high
+    def divisorSum(d):
+        result = 0
+        for num in nums:
+            result += math.ceil(num/d)
+        return result
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        ds = divisorSum(mid)
+
+        if ds <= threshold:
+            ans = mid
+            high = mid - 1
+        else:
+            low = mid + 1
+    return ans
+
+print(binary_search([1,2,5,9],6))
+# output: 5
