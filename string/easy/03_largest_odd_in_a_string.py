@@ -1,6 +1,6 @@
 """
 T.C: O(n)
-S.C: O(1)
+S.C: O(1) 
 """
 def largestOddNumber(num: str) -> str:
     for i in range(len(num)-1,-1,-1):
