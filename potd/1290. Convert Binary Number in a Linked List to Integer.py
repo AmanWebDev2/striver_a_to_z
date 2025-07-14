@@ -12,5 +12,13 @@ class Solution:
         head.next = None
         return last
 
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        return self.rev(head)
+    def getDecimalValue(self, head: Optional[ListNode]) -> int:
+        last = self.rev(head)
+        temp = last
+        power = 0
+        num = 0
+        while temp:
+            num += pow(2, power) * temp.val
+            temp = temp.next
+            power += 1
+        return num
